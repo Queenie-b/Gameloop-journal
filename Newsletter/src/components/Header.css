@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #040507, #1d2b48);
+}
+ 
+#logo{
+    height: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #22C55E;
+}

@@ -1,0 +1,101 @@
+.signup-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-carousel{
+    background-size: cover;
+    background-position: center;
+    transform: transform 5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: zoomEffect 10s infinite alternate;
+    z-index: -2;
+}
+
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.signup-content{
+    position: relative;
+    z-index: 2;
+    padding: 30PX;
+    border-radius: 30px;
+}
+
+.signup-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.signup-content p {
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.signup-form input {
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+#submit {
+    padding: 12px;
+    background-color: #facc15;
+    border: none;
+    border-radius: 10PX;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #facc1562;
+}
+
+.password-wrapper{
+    position: relative;
+}
+
+.password {
+    padding-right: 2.5rem;
+}
+
+.password-toggle{
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+}
