@@ -37,12 +37,13 @@ function SignupPage(){
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({email})
+            body: JSON.stringify({email, password})
         });
 
         if (response.ok) {
             alert("Thank you for signing up!");
             setEmail("");
+            setPassword("");
         } else {
             alert("Something went wrong. Please try again later.");
         }
